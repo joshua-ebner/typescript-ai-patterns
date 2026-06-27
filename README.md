@@ -39,6 +39,19 @@ Includes:
 * default values for common API settings
 * a simple pattern for separating API plumbing from task-specific code
 
+### `04_ai_workflow_patterns`
+
+Examples of basic workflow architecture patterns used in AI systems, including:
+
+* job creation
+* job IDs
+* job status tracking
+* pending / processing / completed / failed states
+* storing results or errors after processing
+
+This section starts with an in-memory job-status workflow and will later build toward queues, retries, rate limits, and background processing.
+
+
 
 ## Setup
 
@@ -63,6 +76,7 @@ npx tsx 01_claude_prompting_patterns/1_simple_llm_call.ts
 npx tsx 02_structured_outputs/3_classify_incoming_text.ts
 npx tsx 03_reusable_claude_client/1_create_reusable_claude_text_client.ts
 npx tsx 03_reusable_claude_client/2_create_reusable_structured_output_client.ts
+npx tsx 04_ai_workflow_patterns/1_simple_job_status_workflow.ts
 ```
 
 ## Purpose
