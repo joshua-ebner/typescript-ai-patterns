@@ -33,10 +33,12 @@ Examples of wrapping Claude API calls in reusable TypeScript functions.
 
 Includes:
 
-- a reusable Claude text client function
-- typed input objects for Claude calls
-- default values for common API settings
-- a simple pattern for separating API plumbing from task-specific code
+* a reusable Claude text client function
+* a reusable Claude structured-output client function
+* typed input objects for Claude calls
+* default values for common API settings
+* a simple pattern for separating API plumbing from task-specific code
+
 
 ## Setup
 
@@ -60,6 +62,7 @@ Run any example with `tsx`:
 npx tsx 01_claude_prompting_patterns/1_simple_llm_call.ts
 npx tsx 02_structured_outputs/3_classify_incoming_text.ts
 npx tsx 03_reusable_claude_client/1_create_reusable_claude_text_client.ts
+npx tsx 03_reusable_claude_client/2_create_reusable_structured_output_client.ts
 ```
 
 ## Purpose
